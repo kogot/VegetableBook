@@ -5,7 +5,8 @@ import { AppComponent }   from './app.component';
 import { routing }        from './app.routes';
 import { CoreModule }     from './core/core.module';
 import { appRoutingProviders } from './app.routes';
-import { VegetableModule} from './vegetable/vegetable.module'
+import { VegetableModule} from './vegetable/vegetable.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
@@ -13,7 +14,8 @@ import { VegetableModule} from './vegetable/vegetable.module'
     HttpModule,
     routing,
     CoreModule,
-    VegetableModule
+    VegetableModule,
+    FormsModule
   ],
   providers: [ appRoutingProviders ],
   declarations: [ AppComponent ],

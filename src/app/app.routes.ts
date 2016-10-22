@@ -6,6 +6,7 @@ import {VegetableComponent } from './vegetable/vegetable.component';
 const appRoutes: Routes = [
     { path: '', loadChildren: 'app/home/home.module#HomeModule' },
     { path: 'vegetable', component: VegetableComponent}
+   
 ];
 
 export const appRoutingProviders: any[] = [

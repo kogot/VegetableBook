@@ -1,3 +1,9 @@
 <p>
-  vegetable works!
+  Vegetable list!
 </p>
+<li *ngFor="let vegetable of vegetables">
+  <span class="badge">{{vegetable.id}}</span>{{vegetable.name}}
+</li>
+
+<input [(ngModel)]='newVegetable' type="text" name="vegetableName" />
+<button (click)="AddNew()">Add</button>
